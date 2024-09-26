@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--User's visible area of a web page-->
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Audiowide|Trirong"> <!--importing google fonts-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire|neon|emboss"> <!--importing google fonts effects-->
+        <script src="https://kit.fontawesome.com/b9d04e5c6b.js" crossorigin="anonymous"></script> <!--importing font awesome icons-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!--importing bootstrap icons-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> <!--importing google icons-->
+
+        
+        <link rel="stylesheet" href="style.css"> <!--External CSS-->
+        <style>
+            /* Internal CSS */
+            /* 
+                Note: 
+                Whatever code is in this element supersedes the <link> CSS, becuase this is declared afterwards. 
+                Alternatively, if the <link> tag came after the <style> tag, then the <link> supersedes the <style>. 
+            */
+            
+        </style>    
+    </head>
+    <body>
+        <b>Selectors</b>
+        <h1>Header 1</h1>
+        <h2>Header 2</h2>
+        <h3 id="header-3">Header 3</h3>
+        <h4 class="header">Header 4</h4>
+        <h5 class="header">Header 5</h5>
+        <h6>Header 6</h6>
+        
+        <b>Inserting CSS</b>
+        <p style="background-color:rgba(149, 0, 255, 0.2);">Inline CSS</p>
+        <!-- 
+            Priority: 
+                1. Inline CSS: Within HTML tag. 
+                2. External/internal CSS: Within <link> and between <style> tags.
+                3. Browser default. 
+         -->
+
+        <b>Background</b>
+         <div class="small-box" id="back-color">background-color</div>
+         <br><br>background-image<br>
+         <div id="back-image"></div>
+
+         <br><b>Borders</b>
+         <div id="border" class="small-box"></div>
+         
+         <br><b>Margin</b>
+         <div id="margin" class="small-box"></div>
+         
+         <br><b>Padding</b>
+         <div id="padding" class="small-box" style="background-color: grey;">
+            <p style="background-color:rgba(0,255,0,0.2)">Content</p>
+        </div>
+
+        <br><b>Sizing</b>
+        <div id="sizing"></div>
+
+        <br><b>Box Model (design layout)</b>
+        <div id="box-parent">
+            <div id="box-child">
+                <div id="box-content">
+                    <p style="font-size:14px;">
+                        Content
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <br><b>Outline</b>
+        <div id="outline" class="small-box"></div>
+
+        <br><b>Text Formatting</b>
+        <div class="big-box" id="text-container">
+            <p id="text-formatting">
+                This is a sample text for text formatting.
+                <br>
+                This is the last line of text for text formatting;
+            </p>
+        </div>
+
+        <br><b>Text Decoration</b>
+        <div class="big-box">
+            <p id="text-decoration">
+                This is a sample text for text decoration.
+                <br>
+                This is the last line of text for text decoration;
+            </p>
+        </div>
+
+        <br><b>Text Spacing</b>
+        <div id="text-spacing" class="big-box">
+            This is a sample text for text spacing. <br>
+            This is a sample text for text spacing. <br>
+            This is a sample text for text spacing. <br>
+            This is a sample text for text spacing. 
+            5 whitespaces:     
+        </div>
+
+        <br><b>Text Shadow</b>
+        <div id="text-shadow" class="big-box">
+            This is a sample text for text shadows.
+        </div>
+
+        <br><b>Fonts</b>
+        <br>
+        <a target="_blank" href="https://www.w3schools.com/css/css_font_pairings.asp">Font pairings</a>
+        <div id="text-fonts" class="big-box">
+            This is a sample text for text fonts. 
+            <p id="google-fonts" class="font-effect-fire"> This is a sample text for Google Fonts. </p>
+            <p id="google-fonts" class="font-effect-neon"> This is a sample text for Google Fonts. </p>
+            <p id="google-fonts" class="font-effect-emboss"> This is a sample text for Google Fonts. </p>
+        </div>
+
+        <br><b>Icons</b><br>
+        <!-- Setup account at https://fontawesome.com/ then get free key to add to script -->
+        <!-- <i class=fas fa-icon"></i> -->
+        <p>Font Awesome Icons</p>
+        <i class="fas fa-cloud"></i>
+        <i class="fas fa-heart"></i>
+        <i class="fas fa-car"></i>
+        <i class="fas fa-file"></i>
+        <i class="fas fa-bars"></i>
+            
+        <p>Bootstrap Icons</p>
+        <i class="glyphicon glyphicon-cloud"></i>
+        <i class="glyphicon glyphicon-remove"></i>
+        <i class="glyphicon glyphicon-user"></i>
+        <i class="glyphicon glyphicon-envelope"></i>
+        <i class="glyphicon glyphicon-thumbs-up"></i>
+            
+        <p>Google Icons</p>
+        <i class="material-icons">cloud</i>
+        <i class="material-icons">favorite</i>
+        <i class="material-icons">attachment</i>
+        <i class="material-icons">computer</i>
+        <i class="material-icons">traffic</i>
+
+
+        <br><b>Links</b><br>
+        <!-- Link states (order matters): link, visited, hover, active -->
+        <a id="link-states" href="https:www.google.com">Link</a>
+        <a id="link-button" href="https:www.google.com">Link</a>
+        
+        <br><b>Cursor</b><br>
+        <span style="cursor: auto">auto</span><br>
+        <span style="cursor: crosshair">crosshair</span><br>
+        <span style="cursor: default">default</span><br>
+        <span style="cursor: e-resize">e-resize</span><br>
+        <span style="cursor: help">help</span><br>
+        <span style="cursor: move">move</span><br>
+        <span style="cursor: n-resize">n-resize</span><br>
+        <span style="cursor: ne-resize">ne-resize</span><br>
+        <span style="cursor: nw-resize">nw-resize</span><br>
+        <span style="cursor: pointer">pointer</span><br>
+        <span style="cursor: progress">progress</span><br>
+        <span style="cursor: s-resize">s-resize</span><br>
+        <span style="cursor: se-resize">se-resize</span><br>
+        <span style="cursor: sw-resize">sw-resize</span><br>
+        <span style="cursor: text">text</span><br>
+        <span style="cursor: w-resize">w-resize</span><br>
+        <span style="cursor: wait">wait</span>
+
+        <br><b>Lists</b>
+        <ul id="list-style">
+            <li>a</li>
+            <li>b</li>
+            <li>c</li>
+        </ul>
+
+        <br><b>Tables</b>
+        <!-- Put table in container with overflow-x:auto for responsive -->
+        <div style="overflow-x:auto">
+            <table id="table-styling">
+                <caption>Normal Table</caption>
+                <tr><th>x</th><th>y</th><th>z</th></tr>
+                <tr><td>1</td><td>2</td><td>3</td></tr>
+                <tr><td>a</td><td>b</td><td>c</td></tr>
+            </table>    
+        </div>
+
+        <br><b>Display Property</b>
+        <p id="display-block">Block</p>
+        <p id="display-inline">Inline</p>
+
+        <br><b>Position</b>
+        <!-- Positioning has to do with how the page is positioned w.r.t. window/container size -->
+        <div id="positioning">This is a sample text for positioning.</div>
+
+        <br><b>Z-index</b>
+        <!-- Specifies the stack order of an element (whether it overlaps or goes behind other elements) -->
+        <p id="z-index">As you scroll, this text does not overlap other elements.</p>
+
+        <br><b>Overflow Control</b>
+        <!-- When content overflows, or is larger than the size of a container -->
+        <div id="overflow" class="small-box">
+            <p>You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</p>
+        </div>
+
+        <br><b>Float and Clear Properties</b>
+        <div id="float">
+            <div id="float-content">
+                This is a sample text for the float property.
+            </div>
+            <div id="clear-content">
+                This is a sample text for clear property.
+            </div>
+        </div>
+
+        <br><b>display:inline-block</b>
+        <div class="big-box">
+            <p>
+                This is a sample text <span id="inline-block">This text is inline with the text, but does not split it.</span>for inline-block.
+            </p>
+        </div>
+
+        <br><b>Horiztonal Alignment</b>
+        <div class="big-box">
+            <div id="horizontal-align" class="small-box">Centered Text</div>
+        </div>
+        
+        <br><b>Vertical Alignment</b>
+        <div class="big-box" id="vertical-container">
+            <div id="vertical-align" class="small-box">Vertically centered Text</div>
+        </div>
+
+        <br><b>Selectors</b>
+        <div id="selector-parent" class="box">
+            Parent
+            <p>Child (directly related)</p>
+            <div>
+                <p>Grandchild (indirectly related)</p>
+            </div>
+        </div>
+        <p>Sibling 1 (adjacently related)</p>
+        <p>Sibling 2 (generally related)</p>
+
+        <br><b>Psuedo-classes</b>
+        <p>Pseudo-classes are CSS classes that define states or functionality of an element.</p>
+        <div id="pseudo-c" class="box">
+            <p>First child &lt;p&gt;. <i>First &lt;i&gt; of First &lt;p&gt;</i>. <i>Second &lt;i&gt; of First &lt;p&gt;</i>.</p>
+            <a href="https://www.google.com">Unvisited Link</a>
+            <p>Second child &lt;p&gt;. <i>First &lt;i&gt; of Second &lt;p&gt;</i>. <i>Second &lt;i&gt; of Second &lt;p&gt;</i>.</p>
+            <p>Text <q lang="quote">quote with custom lang="quote"</q> Text...Originally, quotes would be enclosed with double-quotes, but since we defined its lang to be "quote" and specified that any q with lang(quote) should be enclosed with ~, the quote is enclosed with ~ instead of double-quotes.</p>
+        </div>
+
+        <br><b>Pseudo-elements</b>
+        <p>Pseudo-elements are used to style parts of an element.</p>
+        <div id="pseudo-e" class="big-box">
+            <p>
+                This is a sample text for pseudo-elements.
+                <br>
+                This is a sample text for pseudo-elements.
+                <br>
+                This is a sample text for pseudo-elements.
+                <br>
+                This is a sample text for pseudo-elements.
+                <br>
+                This is a sample text for pseudo-elements.
+                <br>
+            </p>
+            <br>
+            <ul>
+                <li>x</li>
+                <li>y</li>
+                <li>z</li>
+            </ul>
+            Highlight this text.
+        </div>
+
+        <br><b>Opacity</b>
+        <div id="opacity-c">
+            <img id="opacity" src="images/op.jpg">
+            <img src="images/op.jpg">
+        </div>
+        <div id="opacity-ex" class="box">Opacity with rgba()</div>
+        
+        <br><b>Navigation Bar</b>
+        <!-- List of links -->
+        <div id="h-nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Events</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div id="v-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <br><b>Dropdown Menus</b>
+        <div class="horizontal-nav">
+            <p>text</p>
+            <p>text</p>
+            <p>text</p>
+            <div class="drop-menu">
+                <button id="drop-btn">Menu</button>
+                <div class="drop-content">
+                    <ul class="vertical-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <br><b>Attribute Selectors</b>
+        <div id="attribute-selectors" class="box">
+            <a id="link-text x" alt="hello" href="#" target="_blank">target="_blank"</a>
+            <a id="ylinktree " alt="hi there" href="#" target="_parent">target="_parent"</a>
+            <a id="ylink-link x" alt="hello there" href="#" >no target</a>
+        </div>
+
+        <br><b>Forms</b>
+        <form id="form">
+            <input type="text">
+            <input type="button">
+            <input type="text">
+        </form>
+
+        <br><b>Counters</b>
+        <p>Counters are adjusted based on CSS rules.</p>
+        <div>
+            <table id="counters">
+                <caption>Table</caption>
+                <tr><th>x</th><th>y</th><th>z</th></tr>
+                <tr><td>a</td><td>b</td><td>c</td></tr>
+                <tr><td>d</td><td>e</td><td>f</td></tr>
+            </table>
+
+            <br>
+        </div>
+        <div id="nested-counters">
+            <ol>
+                <li>item</li>
+                <li>item   
+                <ol>
+                  <li>item</li>
+                  <li>item</li>
+                  <li>item
+                  <ol>
+                    <li>item</li>
+                    <li>item</li>
+                    <li>item</li>
+                  </ol>
+                  </li>
+                  <li>item</li>
+                </ol>
+                </li>
+                <li>item</li>
+                <li>item</li>
+              </ol>
+              
+              <ol>
+                <li>item</li>
+                <li>item</li>
+              </ol>
+        </div>
+
+        <br><b>Specificity</b>
+        <p>
+            Specificity refers to which CSS rule is selected when multiple rules' 
+            selector refers to an element with specified selector. For example, a 
+            rule can be made for an element, id, and class that an element has defined. 
+            However, the same properties are changed in the CSS; therefore, one 
+            rule must be referred. Specificity solves this problem by creating a hierarchy.
+        </p>
+        <div id="specificity">
+            <strong style="color: red; background-color: red;" id="sid" class="sclass">
+                This text will be red becasue inline CSS has the highest specificity.
+                <br>
+                Specificity order (high to low): 
+                <br> 1. Inline
+                <br> 2. ID
+                <br> 3. Classes, pseudo-classes, attribute selectors
+                <br> 4. Elements and pseudo-elements
+                <br> However, if you use the "!important" after a CSS rule, then that rule will be of highest priority (for the specific property). That is why the background color is purple.
+            </strong>
+        </div>
+
+        <br><b>Math Functions</b>
+        <div class="big-box" style="background-color: red;">
+             <div id="math" style="background-color: blue;" class="box">
+             </div>
+        </div>
+        
+        <br><b>Border Images</b>
+        <div id="border-img" class="box"></div>    
+
+        <br><b>Multiple Backgrounds</b>
+        <div id="multi-back"></div>
+
+        <br><b>Advanced Background</b>
+        <div id="adv-back" class="big-box"></div>
+
+        <br><b>Linear Gradient</b>
+        <div id="lin-gradient"></div>
+
+        <br><b>Radial Gradient</b>
+        <div id="rad-gradient"></div>
+
+        <br><b>Box Shadow</b>
+        <div id="box-shadow" class="box"></div>
+
+        <br><b>Text Effects</b>
+        <div style="width:300px; border: 1px solid black;">
+            <p id="text-overflow-clip">This text will overflow. Overflow means that the text will be greater than the width of the container and result in the need for a break.</p>
+            <p id="text-overflow-ellipsis">This text will overflow. Overflow means that the text will be greater than the width of the container and result in the need for a break.</p>
+            <p id="word-wrap">This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p>
+            <p id="word-break">This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p>
+            <p id="writing-mode">This is a sample text for the direction of the text. This is a sample text for the direction of the text.</p>
+        </div>
+
+        <br><b>Transform</b>
+        <div class="small-box">Original</div>
+        <div id="translate" class="small-box">translate</div>
+        <br><br><br><br>
+        <div id="rotate" class="small-box">rotate</div>
+        <br><br><br><br><br><br>
+        <div id="scale" class="small-box">scale</div>
+        <br><br><br><br><br><br>
+        <div id="skew" class="small-box">skew</div>
+        <br><br><br>
+        <div id="matrix" class="small-box">matrix</div>
+        
+        <br><b>Transitions</b>
+        <p>To create a transition, specify the property to change, the time interval. Then, change the property.</p>
+        <div id="hover-transition" class="small-box"></div>
+
+        <br><b>Animation</b>
+        <p>To animate, create an animation that specifies the change in properties, then assign it to an element. </p>
+        <div id="animate" class="small-box">Animation with only 2 states (0% to 100%)</div>
+        <div id="animate-multi" class="small-box">Animation with 4 states (0% to 25% to 50% to 100%)</div>
+
+        <br><b>Image Masking</b>
+        <div id="mask-image" class="box">
+            <img src="images/background.png" alt="wallpaper">
+        </div>
+
+        <br><b>SVG Masking</b>
+        <div style="background-color: red;">
+            <img id="svg-back" src="images/background2.jpg"/>
+            <svg style="position: absolute;" width="1442" height="630" viewBox="0 0 1442 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <clipPath id="mask">
+                    <path d="M0.5 602.5V0H1441.5V581.5H1432L1399.5 562L1367.5 542.5C1347 538.833 1298.9 530.8 1270.5 528C1235 524.5 1157 542.5 1144.5 542.5C1132 542.5 1050.5 562 1004 562C966.8 562 946.167 582.667 940.5 593C897 604.833 807.7 628.5 798.5 628.5C787 628.5 703 631.5 679 628.5C655 625.5 556 615.5 527 602.5C498 589.5 412.5 583 401 581.5C391.8 580.3 302.5 555 259 542.5L149 562L0.5 602.5Z" fill="#D9D9D9"/>
+                </clipPath>
+            </svg>
+        </div>
+    </body>
+</html>
