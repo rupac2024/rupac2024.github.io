@@ -1,0 +1,55 @@
+#slideshow-container {
+    background-color: black; 
+    height:  700px;
+    display: flex;
+}
+/* DISPLAY PANEL */
+#slideshow-display {
+    width: 70%;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+#slideshow-display video {
+    aspect-ratio: 16/9;
+    width: 80%; 
+}
+#slideshow-display h3 {
+    text-align: center;
+    color: white;
+    font-size: 2vw; 
+    margin-bottom: 0; 
+}
+
+/* NAVIGATION PANEL */
+#slideshow-nav {
+    background-color: black;
+    width: 30%; 
+    display: grid; 
+    grid-template-columns: 70% auto;
+    align-items: center;
+    justify-items: center;
+}
+#slideshow-nav i {
+    position: relative; 
+    right: 1vw;
+    text-align: center;
+    color: white; 
+    opacity: 0;
+    transition: opacity 1s;
+}
+#slideshow-nav button {
+    aspect-ratio: 16/9;
+    width: 80%;
+    background-size: cover;     
+    background-repeat: no-repeat; 
+    cursor: pointer;
+    border: none;
+    opacity: 0.5;
+    transition: opacity 1s;
+}
+#slideshow-nav button:hover {opacity: 1;}
+#slideshow-nav button:hover+i {opacity: 1;}
+#slideshow-modern {background-image: url("media/tini-thumb.png");}
+#slideshow-pag {background-image: url("media/pag-thumb.png");}
+#slideshow-trad {background-image: url("media/trad-thumb.png");}
