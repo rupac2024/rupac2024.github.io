@@ -1,0 +1,30 @@
+
+
+/* No transition when reduced-motion */
+@media(prefers-reduced-motion){
+    .hidden {transition: none;}
+}
+
+/* Initial state fade-in for target elements that are not visible to the root intersection rectangle */
+.hidden {
+    opacity: 0;  
+    transition: all 2s;
+}
+
+/* Final state of fade-in animation. 
+Target elements that become visible (or intersect with the root intersection rectangle) will be given 
+the class "show", which will in turn trigger this animation as the target elements are initially opacity:0
+and are given a new opacity that correlates with the transition property. 
+*/
+.show {
+    opacity: 1;
+
+    /* entrance from left (-100%), entrance from right (100%) */
+    transform: translateX(-100%);
+}
+
+
+
+
+
+
